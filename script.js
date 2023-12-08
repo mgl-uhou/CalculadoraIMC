@@ -30,7 +30,7 @@ const situacao = (imc) => {
     else if (imc >= 17 && imc <= 18.49)
         return 'abaixo do peso..'
     else if (imc >= 18.50 && imc <= 24.99)
-        return "Peso normal."
+        return "com peso normal."
     else if (imc >= 25 && imc <= 29.99)
         return "acima do peso."
     else if (imc > 30 && imc <= 34.99)
