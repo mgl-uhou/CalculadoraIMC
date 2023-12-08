@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+    <div class="d-flex flex-column gap-4 shadow p-3 mb-5 bg-body-tertiary rounded">
+        <h1>
+            Calculadora de IMC
+        </h1>
+
+        <form class="d-flex flex-column">
+
+                <label for="altura" class="form-label">Altura:</label>
+                <input type="number" class="form-control" id="altura" placeholder="Sua altura em metros..." required>
+              
+                <label for="peso" class="form-label mt-3">Peso:</label>
+                <input type="number" class="form-control" id="peso" placeholder="Seu peso em quilogramas..." required>
+
+        </form>
+
+        <button type="button" class="btn btn-outline-primary" id="botao" onclick="calcular()">Calcular</button>
+
+        <span id="resultado"></span>
+
+        <button type="button" class="btn btn-outline-primary" id="recarregar" style="display: none;" onclick="reload()">Calcular de novo</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
