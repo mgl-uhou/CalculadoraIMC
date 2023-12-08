@@ -38,5 +38,5 @@ const situacao = (imc) => {
     else if (imc >= 35 && imc <= 39.99)
         return 'com obesidade nível II (severa).'
     else
-        return 'com obesidade nível III (mbóbida).'
+        return 'com obesidade nível III (mórbida).'
 }
