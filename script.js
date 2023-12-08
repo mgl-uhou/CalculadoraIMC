@@ -12,8 +12,11 @@ const calcular = () => {
         resultado.innerHTML = `Seu IMC é: <strong>${(peso / altura ** 2).toFixed(2)}</strong> <br /> Você está ${situacao((peso / altura ** 2).toFixed(2))}`;
         botao.style.display = 'none';
         recarregar.style.display = 'block';
+
+        document.getElementById('altura').readOnly = true;
+        document.getElementById('peso').readOnly = true;
     } else
-        return false;
+    return false;
 }
 
 const reload = () => {
@@ -22,6 +25,9 @@ const reload = () => {
     document.getElementById('peso').value = "";
     resultado.innerHTML = ``;
     recarregar.style.display = 'none';
+
+    document.getElementById('altura').readOnly = false;
+    document.getElementById('peso').readOnly = false;
 }
 
 const situacao = (imc) => {
