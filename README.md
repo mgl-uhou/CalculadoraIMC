@@ -1,2 +1,8 @@
-Projeto pessoal:
-  Será criado uma calculadora de IMC para reforçar o conhecimento lógico com JavaScrip, como também conhecimentos em HTML e CSS e se viável, utilizar da framework Bootstrap.
+# Personal project.
+
+BMI Calculator.
+
+Project for the Web Programming subject, which involves practising the use of the Bootstrap framework on a website.
+
+To test it, just open the link to the site hosted on Vercel.
+Link here: https://calculadora-imc-iota-eight.vercel.app/
